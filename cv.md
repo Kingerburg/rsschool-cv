@@ -62,3 +62,40 @@ menu.forEach((item) => {
 
 ```
 
+----
+
+### Education
+
+----
+
+* ***[htmlacademy](https://htmlacademy.ru/)***
+* ***[youtube](https://www.youtube.com/c/FreelancerLifeStyle/videos)***
+* ***[learn.javascript](https://learn.javascript.ru)***
+
+----
+
+### Experience
+
+----
+
+I have no work experience in IT, but I have everything ahead of me...
+
+----
+
+### Languages
+
+----
+
+* ***Russian***
+* ***English***
+
+----
+
+#### English
+
+----
+
+Level B2, i am studying and trying to improve my English level
+
+----
+
