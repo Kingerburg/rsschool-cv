@@ -1,0 +1,136 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+
+a {
+	text-decoration: none;
+}
+/*--------------------*/
+body {
+    background-color: #eeeef0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header,
+.main {
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+}
+.section-line {
+    margin: 0 auto;
+    width: 80%;
+    height: 1px;
+    border-bottom: 1px solid #dcdfd8;
+}
+.section-1 {
+    margin-top: 15px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color: #2b2a2a;
+}
+    .photo {
+        width: 50%;
+        height: 100%;
+    }
+        .photo-img {
+            width: 100%;
+            height: 100%;
+            background-image: url(10_342.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 80% 50%;
+        }
+    .name {
+        width: 50%;
+        height: 100%;
+    }
+        .name-fname,
+        .name-begginer {
+            width: 100%;
+            height: 50%;
+        }
+            .fname {
+                font-size: 28px;
+                line-height: 9;
+                letter-spacing: 1px;
+                color: #c65654;
+            }
+            .begginer {
+                color: #c65654;
+                font-size: 26px;
+                letter-spacing: 1px;
+                font-weight: normal;
+            }
+.section-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #2b2a2a;
+}
+    .contact-summary-experience {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+        .contact,
+        .summary,
+        .experience {
+            margin: 0 auto;
+            width: 33%;
+            height: 300px;
+        }
+        .title-cse {
+            padding: 5px 0px 5px 5px;
+            font-size: 21px;
+            letter-spacing: 1px;
+            color: #c65654;
+        }
+        .text-cse {
+            font-size: 19px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            padding: 5px 0px 0px 5px;
+            color: #dcdfd8;
+        }
+            .text-cse > li > a {
+                font-size: 19px;
+                color: #c65654;
+                font-weight: normal;
+            }
+                .text-cse > li {
+                    font-weight: bold;
+                }
