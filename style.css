@@ -67,9 +67,10 @@ body {
         height: 100%;
     }
         .photo-img {
+            margin-top: 15px;
             width: 100%;
-            height: 100%;
-            background-image: url(https://s354myt.storage.yandex.net/rdisk/c0103d88f6d81ea433dbf639a860c966abeddafe4c2e1737c289a491ffef4640/61c5df07/MuPtvPB_XJ9R11dEBrebbFa8oho9dVc5eYDxueFCSju6xmrTOszU0osQbQwBwCVqi1D4d0QUO60_34bW6H-L5Q==?uid=342202273&filename=10_342.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=342202273&fsize=63055&hid=1be921720747a77cb96d197a2ad7722e&media_type=image&tknv=v2&etag=466812cb8e164807483f6b10b69f9352&rtoken=0lFtqkeCIFbF&force_default=yes&ycrid=na-ecda5dbe30adeb5f6ced2c85fa784e91-downloader8f&ts=5d3e586608fc0&s=5ab7ce7d1732146dfdbc74b0ed308f1bb3379c11effdfc3769f2bc0d46bc41ee&pb=U2FsdGVkX18WBjtPUUj48OR3Uy7CzISlddvES77Uen0Ytvw86wCthxznxfeaU9zJjyxdhf7gRpHzswYjQ-zWUVYreoS7Ngz6eznXS9usuxs);
+            height: 90%;
+            background: url(https://socialappe.com/upload/photos/2021/10/GEdO5tncOI5N2j4GliWG_20_22ea94fb29990af829a03a08062ae832_cover_full.jpg);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 80% 50%;
