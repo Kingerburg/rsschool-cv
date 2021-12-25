@@ -58,14 +58,14 @@ const burger = document.querySelector('.header-block-burger'),
 const menu = document.querySelectorAll('.menu');
 
 burger.addEventListener('click', () => {
-    for (let i = 0; i < menu.length; i++) {
+    for (let i = 0; i &lt menu.length; i++) {
         menu[i].classList.toggle('block');
     }
 });
 
     menu.forEach((item) => {
         item.addEventListener('click', () => {
-            for(let i = 0; i < menu.length; i++) {
+            for(let i = 0; i &lt menu.length; i++) {
                 menu[i].classList.remove('active-menu');
                     item.classList.add('active-menu');
         }
@@ -175,7 +175,7 @@ burger.addEventListener('click', () => {
                 <h3 class="text-cse">2021</h3>
             </div>
             <div class="course">
-                <a href="https://rs.school/js/" target="_blank"> <img  src="https://rs.school/images/rs_school_js.svg" alt="logo" width="100px" height="100px"></a>
+                <a href="https://rs.school/js/" target="_blank"> <img  src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
             </div>
         </section>
     </footer>
