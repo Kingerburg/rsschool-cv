@@ -58,14 +58,14 @@ const burger = document.querySelector('.header-block-burger'),
 const menu = document.querySelectorAll('.menu');
 
 burger.addEventListener('click', () => {
-    for (let i = 0; i &lt menu.length; i++) {
+    for (let i = 0; i &lt; menu.length; i++) {
         menu[i].classList.toggle('block');
     }
 });
 
     menu.forEach((item) => {
         item.addEventListener('click', () => {
-            for(let i = 0; i &lt menu.length; i++) {
+            for(let i = 0; i &lt; menu.length; i++) {
                 menu[i].classList.remove('active-menu');
                     item.classList.add('active-menu');
         }
