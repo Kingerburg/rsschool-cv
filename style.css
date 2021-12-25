@@ -42,18 +42,14 @@ a {
 body {
     background-color: #eeeef0;
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    
 }
 .header,
 .main {
     margin: 0 auto;
     width: 80%;
-    height: 300px;
-}
-.section-line {
-    margin: 0 auto;
-    width: 80%;
-    height: 1px;
-    border-bottom: 1px solid #dcdfd8;
+    height: auto;
 }
 .section-1 {
     margin-top: 15px;
@@ -70,7 +66,7 @@ body {
             margin-top: 15px;
             width: 100%;
             height: 90%;
-            background: url(https://github.com/Kingerburg/rsschool-cv/blob/rsschool-cv-html/10_342.jpg?raw=true);
+            background: url(https://socialappe.com/upload/photos/2021/10/GEdO5tncOI5N2j4GliWG_20_22ea94fb29990af829a03a08062ae832_cover_full.jpg);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 80% 50%;
@@ -126,6 +122,7 @@ body {
             line-height: 25px;
             padding: 5px 0px 0px 5px;
             color: #dcdfd8;
+            font-weight: normal;
         }
             .text-cse > li > a {
                 font-size: 19px;
@@ -135,3 +132,139 @@ body {
                 .text-cse > li {
                     font-weight: bold;
                 }
+.section-3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #2b2a2a;
+}
+    .code-skills {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .code,
+    .skills {
+        width: 50%;
+        height: 100%;
+    }
+        .text-code {
+            font-size: 12px;
+            letter-spacing: 1px;
+            display: block;
+            margin-left: 5px;
+            color: #dcdfd8;
+            line-height: 14px;
+        }
+        .skills-block {
+            width: 100%;
+            height: 18%;
+            display: flex;
+        }
+            .skills-name {
+                width: 20%;
+                height: 100%;
+            }
+            .skills-progress {
+                width: 80%;
+                height: 100%;
+            }
+                .back-progress {
+                    position: relative;
+                    top: 35%;
+                    width: 80%;
+                    height: 30%;
+                    background-color: #dcdfd8;
+                }
+                    .real-progress {
+                        text-align: right;
+                        height: 100%;
+                        background-color: #c65654;
+                    }
+                        .html {
+                            width: 90%;
+                        }
+                        .css {
+                            width: 95%;
+                        }
+                        .js {
+                            width: 50%;
+                        }
+                        .vscode {
+                            width: 75%;
+                        }
+                        .ps {
+                            width: 70%;
+                        }
+                            .text-progress {
+                                font-weight: bold;
+                                letter-spacing: 2px;
+                                font-size: 16px;
+                            }
+
+            .text-skills {
+                text-align: center;
+                font-size: 19px;
+                letter-spacing: 1px;
+                line-height: 2.7;
+                color: #dcdfd8;
+                font-weight: normal;
+            }
+.section-4 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: #2b2a2a;
+}
+    .education-languages-languages-level {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+        .education,
+        .languages-level {
+            width: 40%;
+            height: 100%;
+        }
+        .languages {
+            width: 20%;
+            height: 100%;
+        }
+            .languages > ul > li {
+                list-style-type: circle;
+                list-style-position: inside;
+                font-weight: normal;
+            }
+footer {
+    margin: 5px auto;
+    width: 80%;
+    height: 100px;
+}
+    .section-5 {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #2b2a2a;
+    }
+        .link,
+        .year,
+        .course {
+            width: 33%;
+            height: auto;
+            text-align: center;
+        }
+            .link > a {
+                font-size: 19px;
+                color: #c65654;
+                font-weight: normal;
+            }
+            .link {
+                padding-top: 30px;
+            }
+            .year {
+                padding-top: 25px;
+            }
+            .course {
+                padding-right: 5px;
+            }
