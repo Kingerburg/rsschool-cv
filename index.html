@@ -23,13 +23,12 @@
             </div>
         </section>
         
-        <div class="section-line"></div>
     </header>
     <main class="main">
         <section class="section-2">
             <div class="contact-summary-experience">
                 <div class="contact">
-                    <p class="title-cse">Contact:</p>
+                    <h2 class="title-cse">Contact:</h2>
                         <nav>
                             <ul class="text-cse">
                                 <li>Adress: <a href="https://yandex.by/maps/-/CCUyqQqwXB" target="_blank">Belarus, Minsk.</a></li>
@@ -41,15 +40,144 @@
                         </nav>
                 </div>
                 <div class="summary">
-                    <p class="title-cse">Summary:</p>
-                    <p class="text-cse">I am a novice frontend developer. I am going through the path of learning on my own and with the support of a knowledgeable person. Easy to learn. I want to learn and find a job...</p>
+                    <h2 class="title-cse">Summary:</h2>
+                    <h3 class="text-cse">I am a novice frontend developer. I am going through the path of learning on my own and with the support of a knowledgeable person. Easy to learn. I want to learn and find a job...</h3>
                 </div>
                 <div class="experience">
-                    <p class="title-cse">Experience:</p>
-                    <p class="text-cse">I have no work experience in IT, but I have everything ahead of me...</p>
+                    <h2 class="title-cse">Experience:</h2>
+                    <h3 class="text-cse">I have no work experience in IT, but I have everything ahead of me...</h3>
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="code-skills">
+                <div class="code">
+                    <h2 class="title-cse">Code examples:</h2>
+                   <pre><code class="text-code">
+const burger = document.querySelector('.header-block-burger'),
+const menu = document.querySelectorAll('.menu');
+
+burger.addEventListener('click', () => {
+    for (let i = 0; i < menu.length; i++) {
+        menu[i].classList.toggle('block');
+    }
+});
+
+    menu.forEach((item) => {
+        item.addEventListener('click', () => {
+            for(let i = 0; i < menu.length; i++) {
+                menu[i].classList.remove('active-menu');
+                    item.classList.add('active-menu');
+        }
+    })
+})
+                    </code></pre>
+                </div>
+                <div class="skills">
+                    <h2 class="title-cse">Skills:</h2>
+                    <div class="skills-block">
+                        <div class="skills-name">
+                            <h3 class="text-skills">HTML</h3>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="back-progress">
+                                <div class="real-progress html">
+                                    <p class="text-progress">90%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-block">
+                        <div class="skills-name">
+                            <h3 class="text-skills">CSS</h3>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="back-progress">
+                                <div class="real-progress css">
+                                    <p class="text-progress">95%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-block">
+                        <div class="skills-name">
+                            <h3 class="text-skills">JS</h3>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="back-progress">
+                                <div class="real-progress js">
+                                    <p class="text-progress">50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-block">
+                        <div class="skills-name">
+                            <h3 class="text-skills">VS code</h3>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="back-progress">
+                                <div class="real-progress vscode">
+                                    <p class="text-progress">75%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-block">
+                        <div class="skills-name">
+                            <h3 class="text-skills">Ps</h3>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="back-progress">
+                                <div class="real-progress ps">
+                                    <p class="text-progress">70%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="education-languages-languages-level">
+                <div class="education">
+                    <h2 class="title-cse">Education:</h2>
+                    <nav>
+                        <ul class="text-cse">
+                            <li><a href="https://htmlacademy.ru/" target="_blank">htmlacademy</a></li>
+                            <li><a href="https://www.youtube.com/c/FreelancerLifeStyle/videos">youtube</a></li>
+                            <li><a href="https://learn.javascript.ru/">learn.javascript</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="languages">
+                    <h2 class="title-cse">Languages:</h2>
+                    <ul class="text-cse">
+                        <li>Russian</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+                <div class="languages-level">
+                    <h2 class="title-cse">English:</h2>
+                    <h3 class="text-cse">
+                        Level B2, i am studying and trying to improve my English level
+                    </h3>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <section class="section-5">
+            <div class="link">
+                <a href="https://github.com/Kingerburg/rsschool-cv/" target="_blank">My GitHub</a>
+            </div>
+            <div class="year">
+                <h3 class="text-cse">2021</h3>
+            </div>
+            <div class="course">
+                <a href="https://rs.school/js/" target="_blank"> <img  src="https://rs.school/images/rs_school_js.svg" alt="logo" width="100px" height="100px"></a>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
