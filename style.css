@@ -39,233 +39,234 @@ a {
 	text-decoration: none;
 }
 /*--------------------*/
+
 body {
     background-color: #eeeef0;
     font-family: 'Courier New', Courier, monospace;
-    position: relative;
-    
 }
 .header,
-.main {
-    margin: 0 auto;
+.main,
+.footer {
+    margin: 5px auto;
     width: 80%;
+    height: 300px;
+    background-color: #2b2a2a;
+}
+.img_name_contact {
+    margin: 15px auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+    .images {
+        padding-top: 35px;
+        width: 30%;
+        height: 100%;
+    }
+    .name_contact {
+        margin-left: 15px;
+        width: 50%;
+        height: 100%;
+    }
+        .name_contact > .h1_title:nth-child(1) {
+            padding-top: 30px;
+        }
+        .name_contact > .h2_title:nth-child(2) {
+            padding-bottom: 30px;
+        }
+.h1_title,
+.h2_title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #c65654;
+}
+.h2_title {
+    font-size: 23px;
+}
+.ul_contact {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+    .ul_contact > li > a{
+        font-weight: normal;
+        color: #c65654;
+    }
+        .ul_contact > li {
+            padding-bottom: 7px;
+        }
+.main {
     height: auto;
 }
-.section-1 {
-    margin-top: 15px;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    background-color: #2b2a2a;
-}
-    .photo {
-        width: 50%;
-        height: 100%;
-    }
-        .photo-img {
-            margin-top: 15px;
-            width: 100%;
-            height: 90%;
-            background: url(https://socialappe.com/upload/photos/2021/10/GEdO5tncOI5N2j4GliWG_20_22ea94fb29990af829a03a08062ae832_cover_full.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 80% 50%;
-        }
-    .name {
-        width: 50%;
-        height: 100%;
-    }
-        .name-fname,
-        .name-begginer {
-            width: 100%;
-            height: 50%;
-        }
-            .fname {
-                font-size: 28px;
-                line-height: 9;
-                letter-spacing: 1px;
-                color: #c65654;
-            }
-            .begginer {
-                color: #c65654;
-                font-size: 26px;
-                letter-spacing: 1px;
-                font-weight: normal;
-            }
-.section-2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: #2b2a2a;
-}
-    .contact-summary-experience {
-        width: 100%;
-        height: 100%;
+    .summary_experience {
+        margin: 0 auto;
+        width: 90%;
+        height: 30%;
         display: flex;
     }
-        .contact,
         .summary,
         .experience {
-            margin: 0 auto;
-            width: 33%;
-            height: 300px;
+            padding-top: 25px;
+            width: 50%;
+            height: 100%;
         }
-        .title-cse {
-            padding: 5px 0px 5px 5px;
-            font-size: 21px;
-            letter-spacing: 1px;
+            .experience,
+            .languages,
+            .skills {
+                padding-left: 30px;
+            }
+            .summary > h3 {
+                padding-top: 10px;
+                padding-right: 20px;
+            }
+            .experience > h3 {
+                padding-top: 10px;
+            }
+.h3_title {
+    font-size: 18px;
+    color: #eeeef0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.education_languages {
+    margin: 25px auto;
+    width: 90%;
+    height: 25%;
+    display: flex;
+}
+    .education,
+    .languages {
+        width: 50%;
+        height: 100%;
+    }
+.ul_education,
+.ul_languages {
+    padding-top: 10px;
+}
+    .ul_education > li > a {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        color: #eeeef0;
+    }
+        .ul_education > li {
+            list-style-type: circle;
+            list-style-position: inside;
             color: #c65654;
         }
-        .text-cse {
-            font-size: 19px;
-            letter-spacing: 1px;
-            line-height: 25px;
-            padding: 5px 0px 0px 5px;
-            color: #dcdfd8;
-            font-weight: normal;
-        }
-            .text-cse > li > a {
-                font-size: 19px;
-                color: #c65654;
-                font-weight: normal;
-            }
-                .text-cse > li {
-                    font-weight: bold;
-                }
-.section-3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: #2b2a2a;
+.ul_languages > li > span {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #eeeef0;
 }
-    .code-skills {
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
+.ul_languages > li {
+    list-style-type: circle;
+    list-style-position: inside;
+    color: #c65654;
+}
+.languages > .ul_languages > ul > li:nth-child(1) {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 1px solid #c65654;
+}
+.skills_code {
+    margin: 25px auto;
+    width: 90%;
+    height: 50%;
+    display: flex;
+}
     .code,
     .skills {
         width: 50%;
-        height: 100%;
+        height: auto;
     }
-        .text-code {
-            font-size: 12px;
-            letter-spacing: 1px;
-            display: block;
-            margin-left: 5px;
-            color: #dcdfd8;
-            line-height: 14px;
+        .skills {
+            width: 30%;
         }
-        .skills-block {
-            width: 100%;
-            height: 18%;
-            display: flex;
+        code {
+            font-size: 14px;
+            line-height: 20px;
+            color: #eeeef0;
         }
-            .skills-name {
-                width: 20%;
-                height: 100%;
-            }
-            .skills-progress {
-                width: 80%;
-                height: 100%;
-            }
-                .back-progress {
-                    position: relative;
-                    top: 35%;
-                    width: 80%;
-                    height: 30%;
-                    background-color: #dcdfd8;
-                }
-                    .real-progress {
-                        text-align: right;
-                        height: 100%;
-                        background-color: #c65654;
-                    }
-                        .html {
-                            width: 90%;
-                        }
-                        .css {
-                            width: 95%;
-                        }
-                        .js {
-                            width: 50%;
-                        }
-                        .vscode {
-                            width: 75%;
-                        }
-                        .ps {
-                            width: 70%;
-                        }
-                            .text-progress {
-                                font-weight: bold;
-                                letter-spacing: 2px;
-                                font-size: 16px;
-                            }
-
-            .text-skills {
-                text-align: center;
-                font-size: 19px;
-                letter-spacing: 1px;
-                line-height: 2.7;
-                color: #dcdfd8;
-                font-weight: normal;
-            }
-.section-4 {
-    width: 100%;
-    height: 50%;
+.skills_block {
+    width: 165%;
+    height: 50px;
     display: flex;
-    background-color: #2b2a2a;
 }
-    .education-languages-languages-level {
-        width: 100%;
+    .skills_name {
+        width: 80px;
         height: 100%;
-        display: flex;
     }
-        .education,
-        .languages-level {
-            width: 40%;
-            height: 100%;
-        }
-        .languages {
-            width: 20%;
-            height: 100%;
-        }
-            .languages > ul > li {
-                list-style-type: circle;
-                list-style-position: inside;
-                font-weight: normal;
-            }
-footer {
-    margin: 5px auto;
-    width: 80%;
-    height: 100px;
-}
-    .section-5 {
+    .skills_progress {
+        margin-top: 12px;
         width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        background-color: #2b2a2a;
+        height: 20px;
     }
-        .link,
-        .year,
-        .course {
-            width: 33%;
-            height: auto;
+        .back_progress {
+            width: 100%;
+            height: 100%;
+            background-color: #eeeef0;
         }
-            .link > a {
-                font-size: 19px;
-                color: #c65654;
-                font-weight: normal;
+            .real_progress {
+                width: 85%;
+                height: 100%;
+                background-color: #c65654;
             }
-            .link {
-                padding: 30px 0px 0px 5px;
+                .css {
+                    width: 95%;
+                }
+                .js {
+                    width: 50%;
+                }
+                .vs {
+                    width: 75%;
+                }
+                .ps {
+                    width: 70%;
+                }
+            .percent_progress {
+                font-weight: bold;
+                font-size: 16px;
+                padding-top: 2px;
+                float: right;
             }
-            .year {
-                padding: 25px 0px 0px 5px;
+    .name {
+        font-size: 16px;
+        color: #eeeef0;
+        padding-top: 13px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+.github_year_logo {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+    .github,
+    .year,
+    .logo {
+        width: 30%;
+        height: 100%;
+    }
+        .github > .h2_title > a {
+            color: #c65654;
+        }
+            .github > .h2_title,
+            .year > .h2_title {
+                padding-top: 35px;
+                text-align: center;
             }
-            .course {
-                width: 150px;
+            .logo {
+                width: 100px;
                 height: 100px;
-                padding: 30px 20px 0px 0px;
+
             }
+.footer {
+    margin-top: -20px;
+    height: 95px;
+}
