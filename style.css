@@ -87,7 +87,8 @@ body {
 .ul_contact {
     padding-top: 10px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
+    color: #eeeef0;
 }
     .ul_contact > li > a{
         font-weight: normal;
