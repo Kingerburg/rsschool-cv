@@ -9,28 +9,14 @@
 </head>
 <body>
     <header class="header">
-        <section class="section-1">
-            <div class="photo">
-                <div class="photo-img"></div>
-            </div>
-            <div class="name">
-                <div class="name-fname">
-                    <h1 class="fname">Vladimir Doroshin</h1>
-                </div>
-                <div class="name-begginer">
-                    <h2 class="begginer">Begginer Front-End Developer</h2>
-                </div>
-            </div>
-        </section>
-        
-    </header>
-    <main class="main">
-        <section class="section-2">
-            <div class="contact-summary-experience">
-                <div class="contact">
-                    <h2 class="title-cse">Contact:</h2>
+        <section class="img_name_contact">
+                <img class="images" src="https://socialappe.com/upload/photos/2021/10/GEdO5tncOI5N2j4GliWG_20_22ea94fb29990af829a03a08062ae832_cover_full.jpg" alt="Avatar">
+            <div class="name_contact">
+                <h1 class="h1_title">Vladimir Doroshin</h1>
+                <h2 class="h2_title">Begginer Front-End Developer</h2>
+                <h2 class="h2_title">Contact:</h2>
                         <nav>
-                            <ul class="text-cse">
+                            <ul class="ul_contact">
                                 <li>Adress: <a href="https://yandex.by/maps/-/CCUyqQqwXB" target="_blank">Belarus, Minsk.</a></li>
                                 <li>Phone: <a href="tel:+375333343558"> +375(33) 334-35-58</a></li>
                                 <li>E-mail: <a href="mailto:vancel92@yandex.by">vancel92@yandex.by</a></li>
@@ -38,145 +24,141 @@
                                 <li>Discord: <a href="https://discordapp.com/users/919987438384984104/" target="_blank">kingerburg</a></li>
                             </ul>
                         </nav>
-                </div>
-                <div class="summary">
-                    <h2 class="title-cse">Summary:</h2>
-                    <h3 class="text-cse">I am a novice frontend developer. I am going through the path of learning on my own and with the support of a knowledgeable person. Easy to learn. I want to learn and find a job...</h3>
-                </div>
-                <div class="experience">
-                    <h2 class="title-cse">Experience:</h2>
-                    <h3 class="text-cse">I have no work experience in IT, but I have everything ahead of me...</h3>
-                </div>
             </div>
         </section>
-        <section class="section-3">
-            <div class="code-skills">
-                <div class="code">
-                    <h2 class="title-cse">Code examples:</h2>
-                   <pre><code class="text-code">
-const burger = document.querySelector('.header-block-burger'),
+    </header>
+    <main class="main">
+        <section class="summary_experience">
+            <div class="summary">
+                <h2 class="h2_title">Summary:</h2>
+                <h3 class="h3_title">I am a novice frontend developer. I am going through the path of learning on my own and with the support of a knowledgeable person. Easy to learn. I want to learn and find a job...</h3>
+            </div>
+            <div class="experience">
+                <h2 class="h2_title">Experience:</h2>
+                <h3 class="h3_title">I have no work experience in IT, but I have everything ahead of me...</h3>
+            </div>
+        </section>
+        <section class="education_languages">
+            <div class="education">
+                <h2 class="h2_title">Education:</h2>
+                <nav>
+                    <ul class="ul_education">
+                        <li><a href="https://htmlacademy.ru/" target="_blank">htmlacademy</a></li>
+                        <li><a href="https://www.youtube.com/c/FreelancerLifeStyle/videos">youtube</a></li>
+                        <li><a href="https://learn.javascript.ru/">learn.javascript</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="languages">
+                <h2 class="h2_title">Languages:</h2>
+                <ul class="ul_languages">
+                    <li><span>Russian</span></li>
+                    <li><span>English</span></li>
+                    <ul>
+                        <li>
+                            <span class="h3_title">Level B2, i am studying and trying to improve my English level...</span>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+        <section class="skills_code">
+            <div class="code">
+                <h2 class="h2_title">Code examples:</h2>
+                <pre><code>
+const burger = document.querySelector('.header-block-burger');
 const menu = document.querySelectorAll('.menu');
-
+                    
 burger.addEventListener('click', () => {
     for (let i = 0; i &lt; menu.length; i++) {
         menu[i].classList.toggle('block');
     }
 });
 
-    menu.forEach((item) => {
-        item.addEventListener('click', () => {
-            for(let i = 0; i &lt; menu.length; i++) {
-                menu[i].classList.remove('active-menu');
-                    item.classList.add('active-menu');
+menu.forEach((item) => {
+    item.addEventListener('click', () => {
+        for(let i = 0; i &lt; menu.length; i++) {
+            menu[i].classList.remove('active-menu');
+                item.classList.add('active-menu');
         }
     })
 })
-                    </code></pre>
-                </div>
-                <div class="skills">
-                    <h2 class="title-cse">Skills:</h2>
-                    <div class="skills-block">
-                        <div class="skills-name">
-                            <h3 class="text-skills">HTML</h3>
-                        </div>
-                        <div class="skills-progress">
-                            <div class="back-progress">
-                                <div class="real-progress html">
-                                    <p class="text-progress">90%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-block">
-                        <div class="skills-name">
-                            <h3 class="text-skills">CSS</h3>
-                        </div>
-                        <div class="skills-progress">
-                            <div class="back-progress">
-                                <div class="real-progress css">
-                                    <p class="text-progress">95%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-block">
-                        <div class="skills-name">
-                            <h3 class="text-skills">JS</h3>
-                        </div>
-                        <div class="skills-progress">
-                            <div class="back-progress">
-                                <div class="real-progress js">
-                                    <p class="text-progress">50%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-block">
-                        <div class="skills-name">
-                            <h3 class="text-skills">VS code</h3>
-                        </div>
-                        <div class="skills-progress">
-                            <div class="back-progress">
-                                <div class="real-progress vscode">
-                                    <p class="text-progress">75%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-block">
-                        <div class="skills-name">
-                            <h3 class="text-skills">Ps</h3>
-                        </div>
-                        <div class="skills-progress">
-                            <div class="back-progress">
-                                <div class="real-progress ps">
-                                    <p class="text-progress">70%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                        </code></pre>
             </div>
-        </section>
-        <section class="section-4">
-            <div class="education-languages-languages-level">
-                <div class="education">
-                    <h2 class="title-cse">Education:</h2>
-                    <nav>
-                        <ul class="text-cse">
-                            <li><a href="https://htmlacademy.ru/" target="_blank">htmlacademy</a></li>
-                            <li><a href="https://www.youtube.com/c/FreelancerLifeStyle/videos">youtube</a></li>
-                            <li><a href="https://learn.javascript.ru/">learn.javascript</a></li>
-                        </ul>
-                    </nav>
+            <div class="skills">
+                <h2 class="h2_title">Skills:</h2>
+                <div class="skills_block">
+                    <div class="skills_name">
+                        <p class="name">HTML</p>
+                    </div>
+                    <div class="skills_progress">
+                        <div class="back_progress">
+                            <div class="real_progress html">
+                                <p class="percent_progress">85%</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="languages">
-                    <h2 class="title-cse">Languages:</h2>
-                    <ul class="text-cse">
-                        <li>Russian</li>
-                        <li>English</li>
-                    </ul>
-                </div>
-                <div class="languages-level">
-                    <h2 class="title-cse">English:</h2>
-                    <h3 class="text-cse">
-                        Level B2, i am studying and trying to improve my English level
-                    </h3>
-                </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">CSS</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress css">
+                                    <p class="percent_progress">95%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">JS</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress js">
+                                    <p class="percent_progress">50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">VS code</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress vs">
+                                    <p class="percent_progress">75%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">PS</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress html">
+                                    <p class="percent_progress">70%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <section class="section-5">
-            <div class="link">
-                <a href="https://github.com/Kingerburg/rsschool-cv/" target="_blank">My GitHub</a>
+        <section class="github_year_logo">
+            <div class="github">
+                <h2 class="h2_title"><a href="https://github.com/Kingerburg/rsschool-cv/">My GitHub</a> </h2>
             </div>
             <div class="year">
-                <h3 class="text-cse">2021</h3>
+                <h2 class="h2_title">2021</h2>
             </div>
-            <div class="course">
-                <a href="https://rs.school/js/" target="_blank"> <img  src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
-            </div>
+                <a href="https://rs.school/js/" target="_blank"> <img class="logo"  src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
         </section>
     </footer>
 </body>
