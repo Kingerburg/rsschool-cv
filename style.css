@@ -167,7 +167,8 @@ body {
     list-style-position: inside;
     color: #c65654;
 }
-.languages > .ul_languages > ul > li:nth-child(1) {
+.ul_languages > li > ul > li > span {
+    display: block;
     margin-left: 20px;
     padding-left: 10px;
     border-left: 1px solid #c65654;
