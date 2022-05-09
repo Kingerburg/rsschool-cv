@@ -364,20 +364,24 @@ button.forEach((item, index) => {
             getLanguage();
             
             for (let i = 0; i < 63; i++) {
-                engNameKeyBtn = document.querySelectorAll('.engNameKey');
-                engNameKeyBtn[i].textContent = rusNameKeyButton[i]
-                rusNameKey = document.querySelectorAll('.rusNameKey');
-                rusNameKey[i].textContent = engNameKeyButton[i];
+                var engNameKeyBtn = document.querySelectorAll('.engNameKey');
+                engNameKeyBtn[i].textContent = rusNameKeyButton[i];
+                var rusNameKeyBtn = document.querySelectorAll('.rusNameKey');
+                rusNameKeyBtn[i].textContent = engNameKeyButton[i];
             }
+
         } else if (locallanguage == 'rus' && button[41].classList.contains('button-active') + index == 56) {
             language = 'eng'
             localStorage.setItem('Language', language)
             button[63].innerHTML = `<a href="https://rs.school/" target="_blank" style="color: antiquewhite;">RS</a>${language}`
+
+            getLanguage();
             for (let i = 0; i < 63; i++) {
-                engNameKeyBtn = document.querySelectorAll('.engNameKey');
+                var rusNameKeyBtn = document.querySelectorAll('.rusNameKey');
+                rusNameKeyBtn[i].textContent = rusNameKey[i];
+                var engNameKeyBtn = document.querySelectorAll('.engNameKey');
                 engNameKeyBtn[i].textContent = engNameKey[i];
             }
-            getLanguage();
         }
 
         if (index == 60) {
@@ -423,23 +427,25 @@ textArea.addEventListener('keyup', (e) => {
         language = 'eng'
         localStorage.setItem('Language', language)
         button[63].innerHTML = `<a href="https://rs.school/" target="_blank" style="color: antiquewhite;">RS</a>${language}`
-        getLanguage();
         for (let i = 0; i < 63; i++) {
             engNameKeyBtn = document.querySelectorAll('.engNameKey');
             engNameKeyBtn[i].textContent = engNameKey[i];
+            rusNameKey = document.querySelectorAll('.rusNameKey')
+            rusNameKey[i].textContent = rusNameKeyButton[i]
         }
+        getLanguage();
 
     } else if (locallanguage == 'eng' && e.shiftKey + e.altKey) {
         language = 'rus'
         localStorage.setItem('Language', language)
         button[63].innerHTML = `<a href="https://rs.school/" target="_blank" style="color: antiquewhite;">RS</a>${language}`
-        getLanguage();
         for (let i = 0; i < 63; i++) {
-            engNameKeyBtn = document.querySelectorAll('.engNameKey');
+            engNameKeyBtn = document.querySelectorAll('.engNameKey')
             engNameKeyBtn[i].textContent = rusNameKeyButton[i]
-            rusNameKey = document.querySelectorAll('.rusNameKey');
-            rusNameKey[i].textContent = engNameKeyButton[i];
+            rusNameKey = document.querySelectorAll('.rusNameKey')
+            rusNameKey[i].textContent = engNameKeyButton[i]
         }
+        getLanguage();
     }
     button.forEach((item, index) => {
 
