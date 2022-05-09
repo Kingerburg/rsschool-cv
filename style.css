@@ -1,0 +1,275 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+
+a {
+	text-decoration: none;
+}
+/*--------------------*/
+
+body {
+    background-color: #eeeef0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header,
+.main,
+.footer {
+    margin: 5px auto;
+    width: 1024px;
+    height: 300px;
+    background-color: #2b2a2a;
+}
+.img_name_contact {
+    margin: 15px auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+    .images {
+        padding-top: 35px;
+        width: 30%;
+        height: 100%;
+    }
+    .name_contact {
+        margin-left: 15px;
+        width: 50%;
+        height: 100%;
+    }
+        .name_contact > .h1_title:nth-child(1) {
+            padding-top: 30px;
+        }
+        .name_contact > .h2_title:nth-child(2) {
+            padding-bottom: 30px;
+        }
+.h1_title,
+.h2_title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #c65654;
+}
+.h2_title {
+    font-size: 23px;
+}
+.ul_contact {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #eeeef0;
+}
+    .ul_contact > li > a{
+        font-weight: normal;
+        color: #c65654;
+    }
+        .ul_contact > li {
+            padding-bottom: 7px;
+        }
+.main {
+    height: auto;
+}
+    .summary_experience {
+        margin: 0 auto;
+        width: 90%;
+        height: 30%;
+        display: flex;
+    }
+        .summary,
+        .experience {
+            padding-top: 25px;
+            width: 50%;
+            height: 100%;
+        }
+            .experience,
+            .languages,
+            .skills {
+                padding-left: 30px;
+            }
+            .summary > h3 {
+                padding-top: 10px;
+                padding-right: 20px;
+            }
+            .experience > h3 {
+                padding-top: 10px;
+            }
+.h3_title {
+    font-size: 18px;
+    color: #eeeef0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.education_languages {
+    margin: 25px auto;
+    width: 90%;
+    height: 25%;
+    display: flex;
+}
+    .education,
+    .languages {
+        width: 50%;
+        height: 100%;
+    }
+.ul_education,
+.ul_languages {
+    padding-top: 10px;
+}
+    .ul_education > li > a {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        color: #eeeef0;
+    }
+        .ul_education > li {
+            list-style-type: circle;
+            list-style-position: inside;
+            color: #c65654;
+        }
+.ul_languages > li > span {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #eeeef0;
+}
+.ul_languages > li {
+    list-style-type: circle;
+    list-style-position: inside;
+    color: #c65654;
+}
+.ul_languages > li > ul > li > span {
+    display: block;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 1px solid #c65654;
+}
+.skills_code {
+    margin: 25px auto;
+    width: 90%;
+    height: 50%;
+    display: flex;
+}
+    .code,
+    .skills {
+        width: 50%;
+        height: auto;
+    }
+        .skills {
+            width: 30%;
+        }
+        code {
+            font-size: 14px;
+            line-height: 20px;
+            color: #eeeef0;
+        }
+.skills_block {
+    width: 165%;
+    height: 50px;
+    display: flex;
+}
+    .skills_name {
+        width: 80px;
+        height: 100%;
+    }
+    .skills_progress {
+        margin-top: 12px;
+        width: 100%;
+        height: 20px;
+    }
+        .back_progress {
+            width: 100%;
+            height: 100%;
+            background-color: #eeeef0;
+        }
+            .real_progress {
+                width: 85%;
+                height: 100%;
+                background-color: #c65654;
+            }
+                .css {
+                    width: 95%;
+                }
+                .js {
+                    width: 50%;
+                }
+                .vs {
+                    width: 75%;
+                }
+                .ps {
+                    width: 70%;
+                }
+            .percent_progress {
+                font-weight: bold;
+                font-size: 16px;
+                padding-top: 2px;
+                float: right;
+            }
+    .name {
+        font-size: 16px;
+        color: #eeeef0;
+        padding-top: 13px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+.github_year_logo {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+    .github,
+    .year,
+    .logo {
+        width: 30%;
+        height: 100%;
+    }
+        .github > .h2_title > a {
+            color: #c65654;
+        }
+            .github > .h2_title,
+            .year > .h2_title {
+                padding-top: 35px;
+                text-align: center;
+            }
+            .logo {
+                width: 100px;
+                height: 100px;
+
+            }
+.footer {
+    margin-top: -20px;
+    height: 95px;
+}
