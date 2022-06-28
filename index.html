@@ -137,3 +137,180 @@
     <script src="js/app.min.js"></script>
 </body>
 </html>
+=======
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vladimir Doroshin | rsschool-cv</title>
+</head>
+<body>
+    <header class="header">
+        
+        <section class="img_name_contact">
+                <img class="images" src="https://socialappe.com/upload/photos/2021/10/GEdO5tncOI5N2j4GliWG_20_22ea94fb29990af829a03a08062ae832_cover_full.jpg" alt="Avatar">
+            <div class="name_contact">
+                <h1 class="h1_title">Vladimir Doroshin</h1>
+                <h2 class="h2_title">Begginer Front-End Developer</h2>
+                <h2 class="h2_title">Contact:</h2>
+                        <nav>
+                            <ul class="ul_contact">
+                                <li>Adress: <a href="https://yandex.by/maps/-/CCUyqQqwXB" target="_blank">Belarus, Minsk.</a></li>
+                                <li>Phone: <a href="tel:+375333343558"> +375(33) 334-35-58</a></li>
+                                <li>E-mail: <a href="mailto:vancel92@yandex.by">vancel92@yandex.by</a></li>
+                                <li>Github: <a href="https://github.com/Kingerburg" target="_blank">kingerburg</a></li>
+                                <li>Discord: <a href="https://discordapp.com/users/919987438384984104/" target="_blank">kingerburg</a></li>
+                            </ul>
+                        </nav>
+            </div>
+        </section>
+   
+    </header>
+    <main class="main">
+        <section class="summary_experience">
+            <div class="summary">
+                <h2 class="h2_title">Summary:</h2>
+                <h3 class="h3_title">I am a novice frontend developer. I am going through the path of learning on my own and with the support of a knowledgeable person. Easy to learn. I want to learn and find a job...</h3>
+            </div>
+            <div class="experience">
+                <h2 class="h2_title">Experience:</h2>
+                <h3 class="h3_title">
+                    <ul class="ul_education">
+                    <li><a href="https://rolling-scopes-school.github.io/kingerburg-JSFEPRESCHOOL/portfolio/" target="_blank">Portfolio</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/kingerburg-JSFEPRESCHOOL/eco-sounds/" target="_blank">Eco-sounds</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/kingerburg-JSFEPRESCHOOL/audio-player/" target="_blank">Audio-player</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/kingerburg-JSFEPRESCHOOL/custom-video/" target="_blank">Custom-video</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/kingerburg-JSFEPRESCHOOL/random-game/" target="_blank">Random-game</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/kingerburg-JSFEPRESCHOOL/random-jokes/" target="_blank">Random-jokes</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/kingerburg-JSFEPRESCHOOL/image-galery/" target="_blank">Image-gallery</a></li>
+                </ul>
+                </h3>
+            </div>
+        </section>
+        <section class="education_languages">
+            <div class="education">
+                <h2 class="h2_title">Education:</h2>
+                <nav>
+                    <ul class="ul_education">
+                        <li><a href="https://rs.school/" target="_blank">RS School</a> / <a href="http://https://docviewer.yandex.by/view/342202273/?*=JXCY%2Bx8rvIDJgDMUGmv3496t5AJ7InVybCI6InlhLWRpc2stcHVibGljOi8vemxwWmljUFBDMWlCdE5BQlBKU0psNUVQRGk3UlVLMERyL28yaENYdkZTNCtqakxxSStWTTlTb2djWDJaM0gzbXEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoib2lhcjB3aWMucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiIzNDIyMDIyNzMiLCJ0cyI6MTY0NzQyMTk5NjM4NCwieXUiOiI5MTY1ODY0MzQxNjQ1MTM4NTcxIn0%3D" target="_blank">Certificate</a></li>
+                        <li><a href="https://htmlacademy.ru/" target="_blank">htmlacademy</a></li>
+                        <li><a href="https://www.youtube.com/c/FreelancerLifeStyle/videos">youtube</a></li>
+                        <li><a href="https://learn.javascript.ru/">learn.javascript</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="languages">
+                <h2 class="h2_title">Languages:</h2>
+                <ul class="ul_languages">
+                    <li><span>Russian</span></li>
+                    <li><span>English</span>
+                    <ul>
+                        <li>
+                            <span class="h3_title">Level B2, i am studying and trying to improve my English level...</span>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills_code">
+            <div class="code">
+                <h2 class="h2_title">Code examples:</h2>
+                <pre><code>
+const burger = document.querySelector('.header-block-burger');
+const menu = document.querySelectorAll('.menu');
+                    
+burger.addEventListener('click', () => {
+    for (let i = 0; i &lt; menu.length; i++) {
+        menu[i].classList.toggle('block');
+    }
+});
+
+menu.forEach((item) => {
+    item.addEventListener('click', () => {
+        for(let i = 0; i &lt; menu.length; i++) {
+            menu[i].classList.remove('active-menu');
+                item.classList.add('active-menu');
+        }
+    })
+})
+                                        </code></pre>
+            </div>
+            <div class="skills">
+                <h2 class="h2_title">Skills:</h2>
+                <div class="skills_block">
+                    <div class="skills_name">
+                        <p class="name">HTML</p>
+                    </div>
+                    <div class="skills_progress">
+                        <div class="back_progress">
+                            <div class="real_progress html">
+                                <p class="percent_progress">85%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">CSS</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress css">
+                                    <p class="percent_progress">95%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">JS</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress js">
+                                    <p class="percent_progress">50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">VS code</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress vs">
+                                    <p class="percent_progress">75%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <div class="skills_name">
+                            <p class="name">PS</p>
+                        </div>
+                        <div class="skills_progress">
+                            <div class="back_progress">
+                                <div class="real_progress html">
+                                    <p class="percent_progress">70%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="github_year_logo">
+            <div class="github">
+                <h2 class="h2_title"><a href="https://github.com/Kingerburg/rsschool-cv/" target="_blank">My GitHub</a> </h2>
+            </div>
+            <div class="year">
+                <h2 class="h2_title">2022</h2>
+            </div>
+                <a href="https://rs.school/js/" target="_blank"> <img class="logo"  src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
+        </section>
+    </footer>
+</body>
+</html>
